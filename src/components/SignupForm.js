@@ -17,7 +17,7 @@ export default function SignupForm() {
           email: email,
           password: password,
           });
-          alert("Employee Registation Successfully");
+          alert("Employee Registration Successfully");
  
         } catch (err) {
           alert(err);
