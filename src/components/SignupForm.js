@@ -12,7 +12,7 @@ export default function SignupForm() {
     async function save(event) {
         event.preventDefault();
         try {
-          await axios.post("/api/v1/employee/save", {
+          await axios.post("https://candybusiness.herokuapp.com/api/v1/employee/save", {
           employeename: employeename,
           email: email,
           password: password,

@@ -12,7 +12,7 @@ export default function ContactUs() {
     async function save(event) {
         event.preventDefault();
         try {
-          await axios.post("/api/v1/employee/contact", {
+          await axios.post("https://candybusiness.herokuapp.com/api/v1/employee/contact", {
           name: name,
           email: email,
           message: message,

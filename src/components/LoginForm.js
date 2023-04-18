@@ -14,7 +14,7 @@ export default function LoginForm()  {
     async function login(event) {
         event.preventDefault();
         try {
-          await axios.post("/api/v1/employee/login", {
+          await axios.post("https://candybusiness.herokuapp.com/api/v1/employee/login", {
             email: email,
             password: password,
             }).then((res) =>
